@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bibith Sunil — Cybersecurity Portfolio</title>
+  <meta name="description" content="Portfolio of Bibith Sunil — cybersecurity analyst, SOC aspirant and full-stack developer. Projects: threat intelligence platform, zero-knowledge password manager, vulnerable lab and more." />
+  <meta name="author" content="Bibith Sunil" />
+
+  <!-- Open Graph (how the link previews look when shared on LinkedIn / WhatsApp) -->
+  <meta property="og:title" content="Bibith Sunil — Cybersecurity Portfolio" />
+  <meta property="og:description" content="Threat Intelligence Platform · Zero-Knowledge Password Manager · Vulnerable Lab & more." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bibithsunil.github.io/" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>" />
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="nav-logo" href="#home">
+        <span class="prompt">❯</span> bibith<span class="accent">@</span>~/portfolio
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#labs">Labs</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+
+        <div class="hero-text">
+          <p class="hero-kicker">// whoami</p>
+          <h1>Hi, I'm <span class="name">Bibith Sunil</span></h1>
+          <p class="hero-code">
+            <span class="prompt">root@kali:~$</span> <span class="type-line" id="typedLine"></span><span class="cursor">▊</span>
+          </p>
+          <p class="hero-sub">
+            BCA graduate &amp; cybersecurity student focused on network security, SOC operations and secure
+            full-stack development. I build security tools, break intentional ones, and turn findings into
+            write-ups worth reading.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-ghost" href="#contact">Get in Touch</a>
+          </div>
+
+          <ul class="hero-links">
+            <li><a href="https://linkedin.com/in/bibith-sunil" target="_blank" rel="noopener" title="LinkedIn">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+              <span>linkedin.com/in/bibith-sunil</span>
+            </a></li>
+            <!-- TODO: replace the GitHub link below with your real profile URL -->
+            <li><a href="#" id="githubLink" title="GitHub">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.11-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.9 1.23 3.22 0 4.61-2.8 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .3z"/></svg>
+              <span>GitHub</span>
+            </a></li>
+            <li><a href="mailto:bibithsunil@gmail.com" title="Email">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              <span>bibithsunil@gmail.com</span>
+            </a></li>
+          </ul>
+        </div>
+
+        <div class="hero-term" role="img" aria-label="Terminal window showing user info">
+          <div class="term-bar"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span><span class="term-title">bibith@kali: ~</span></div>
+          <div class="term-body">
+            <p><span class="prompt">$</span> <span class="cmd">cat about.md</span></p>
+            <p>Bibith Sunil | Kerala, IN</p>
+            <p>Role<span class="dim">........</span>Cybersecurity Analyst (aspiring)</p>
+            <p>Focus<span class="dim">......</span>Network Security · SOC · Secure Dev</p>
+            <p>Certs<span class="dim">........</span>OCSP · CompTIA Security+ (in progress)</p>
+            <p>Lab<span class="dim">..........</span>Kali · Ubuntu · Metasploitable · DVWA</p>
+            <p class="ok"><span class="prompt">$</span> <span class="cmd">./status --update</span></p>
+            <p class="ok">✔ actively learning &amp; building</p>
+            <p><span class="prompt">$</span> <span class="cursor-static">▊</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title"><span class="accent">#</span> about</h2>
+        <p class="section-desc">A quick briefing on who I am and what I do.</p>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <h3><span class="accent">❯</span> The short version</h3>
+            <p>
+              BCA graduate from Bengaluru City University with hands-on exposure to networking, Linux, system
+              administration, traffic analysis and security tooling. Comfortable across the TCP/IP stack —
+              DNS, DHCP, routing, firewalls — and equally at home reading Wireshark captures, running Nmap
+              recon, or writing web apps that don't leak your passwords.
+            </p>
+            <p>
+              I train daily in lab environments (Kali, Metasploitable, DVWA) to keep my offensive and defensive
+              skills sharp, and I document every build and break so my work stays reproducible.
+            </p>
+          </div>
+          <div class="about-card">
+            <h3><span class="accent">❯</span> Current mission</h3>
+            <ul class="tick-list">
+              <li>Earning <strong>CompTIA Security+</strong> (expected May 2026)</li>
+              <li>Building secure full-stack apps with encryption-first architecture</li>
+              <li>Practicing CTF-style labs &amp; attack simulation on local VMs</li>
+              <li>Learning SOC workflows — monitoring, log analysis, incident response</li>
+              <li>Open to <strong>entry-level SOC / Network Security / IT Security</strong> roles</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <h2 class="section-title"><span class="accent">#</span> skills</h2>
+        <p class="section-desc">Toolbox I reach for when solving problems.</p>
+
+        <div class="skills-grid">
+
+          <div class="skill-group">
+            <h3>🌐 Networking</h3>
+            <ul class="chips">
+              <li>TCP/IP</li><li>OSI Model</li><li>DNS</li><li>DHCP</li>
+              <li>Routing &amp; Switching</li><li>Firewalls</li><li>Traffic Analysis</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3>🛠️ Security Tools</h3>
+            <ul class="chips">
+              <li>Wireshark</li><li>Nmap</li><li>Burp Suite</li><li>Gobuster</li>
+              <li>Netcat</li><li>Metasploit</li><li>Splunk (basic)</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3>💻 Programming</h3>
+            <ul class="chips">
+              <li>Python (basic)</li><li>C (basic)</li><li>Java (basic)</li>
+              <li>JavaScript</li><li>HTML / CSS</li><li>Bash</li><li>SQL</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3>☁️ Cloud &amp; Servers</h3>
+            <ul class="chips">
+              <li>AWS EC2</li><li>VPC / Subnets</li><li>Security Groups</li>
+              <li>IAM</li><li>CloudWatch</li><li>Nginx</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3>🐧 Operating Systems</h3>
+            <ul class="chips">
+              <li>Kali Linux</li><li>Ubuntu</li><li>Android / Termux</li><li>Windows</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3>🧰 Dev &amp; Workflow</h3>
+            <ul class="chips">
+              <li>Git / GitHub</li><li>PostgreSQL</li><li>Node.js</li><li>Express</li>
+              <li>React · TypeScript</li><li>Tailwind CSS</li><li>Vite</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title"><span class="accent">#</span> projects</h2>
+        <p class="section-desc">Security-focused builds — from zero-knowledge crypto to attack simulation.</p>
+
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-head">
+              <span class="project-icon">🛡️</span>
+              <span class="project-status">Featured</span>
+            </div>
+            <h3>Advanced Threat Intelligence Platform</h3>
+            <p>
+              Real-time threat monitoring dashboard with ML-powered anomaly detection. Streams live threat
+              data over WebSockets, fuses intelligence from <strong>VirusTotal, AbuseIPDB and Shodan</strong>,
+              and visualises global attack distribution on an interactive world map.
+            </p>
+            <ul class="techs">
+              <li>Node.js</li><li>Express</li><li>PostgreSQL</li><li>Socket.IO</li>
+              <li>React 18</li><li>TypeScript</li><li>Tailwind</li><li>Z-score ML</li>
+            </ul>
+            <div class="project-links">
+              <a href="#contact">Request code ↗</a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-head">
+              <span class="project-icon">🔐</span>
+              <span class="project-status">Featured</span>
+            </div>
+            <h3>Zero-Knowledge Password Manager</h3>
+            <p>
+              End-to-end encrypted password vault where the <strong>server never sees plaintext</strong>.
+              All encryption happens in the browser with <strong>AES-256-GCM</strong>, plus Argon2id hashing,
+              PBKDF2 key derivation and zxcvbn password-strength analysis.
+            </p>
+            <ul class="techs">
+              <li>Node.js</li><li>Express</li><li>PostgreSQL</li><li>React + TS</li>
+              <li>Web Crypto API</li><li>AES-256-GCM</li><li>Argon2id</li>
+            </ul>
+            <div class="project-links">
+              <a href="#contact">Request code ↗</a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-head">
+              <span class="project-icon">🔓</span>
+              <span class="project-status">Featured</span>
+            </div>
+            <h3>Vulnerable Lab — Web App Pentest Practice</h3>
+            <p>
+              Intentionally vulnerable web application with <strong>6 exploitable challenges</strong> — SQL
+              injection, XSS, command injection, path traversal, auth bypass and IDOR. Built as a safe,
+              local playground for practising real attack techniques with Burp Suite.
+            </p>
+            <ul class="techs">
+              <li>Node.js</li><li>Express</li><li>SQLi</li><li>XSS</li>
+              <li>Cmd Injection</li><li>Path Traversal</li><li>IDOR</li>
+            </ul>
+            <div class="project-links">
+              <a href="#contact">Request code ↗</a>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card">
+            <div class="project-head">
+              <span class="project-icon">🛒</span>
+              <span class="project-status">Web Dev</span>
+            </div>
+            <h3>E-Commerce Web Application</h3>
+            <p>
+              Responsive storefront with cart flow, simulated payments and backend deployed on
+              PythonAnywhere. Sharpen my understanding of HTTP request/response flow, sessions and
+              web application architecture fundamentals.
+            </p>
+            <ul class="techs">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>PythonAnywhere</li>
+            </ul>
+            <div class="project-links">
+              <a href="#contact">Request code ↗</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LABS ============ -->
+    <section class="section section-alt" id="labs">
+      <div class="container">
+        <h2 class="section-title"><span class="accent">#</span> hands-on labs</h2>
+        <p class="section-desc">Reproducible home-lab work — documented, repeatable, no shortcuts.</p>
+
+        <div class="labs-grid">
+
+          <div class="lab-card">
+            <h3>🕸️ Network Troubleshooting Lab</h3>
+            <p>
+              IP configuration, gateway checks, DNS lookups and traceroute across Kali host + Ubuntu guest
+              to isolate host, DNS and path-level faults.
+            </p>
+          </div>
+
+          <div class="lab-card">
+            <h3>🐧 Linux Server Support Lab</h3>
+            <p>
+              Installed and hardened <strong>Nginx</strong>, reviewed service status, and diagnosed behaviour
+              via <code>journalctl</code> and systemd service checks.
+            </p>
+          </div>
+
+          <div class="lab-card">
+            <h3>☁️ AWS EC2 Infrastructure Lab</h3>
+            <p>
+              Launched an Ubuntu EC2 instance, configured security groups, connected over SSH and verified
+              Nginx serving traffic — while auditing which ports the SG actually exposes.
+            </p>
+          </div>
+
+          <div class="lab-card">
+            <h3>🎯 Personal Network Analysis Lab</h3>
+            <p>
+              Full local attack range: <strong>Kali + Ubuntu + Metasploitable + DVWA</strong> for scanning,
+              enumeration, packet analysis and troubleshooting with structured find keeping.
+            </p>
+          </div>
+
+          <div class="lab-card">
+            <h3>🖥️ IT Apprentice Labs (Autodesk)</h3>
+            <p>
+              ITSM-style practice: network troubleshooting playbooks, Linux server support, AWS step-by-step
+              guides and monitoring/automation with custom Python &amp; Bash checks.
+            </p>
+          </div>
+
+          <div class="lab-card">
+            <h3>🔎 Wireshark Packet Analysis</h3>
+            <p>
+              Protocol-level inspection of captures — HTTP, DNS and TCP behaviour — plus spotting
+              unusual traffic patterns during troubleshooting.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <div class="container">
+        <h2 class="section-title"><span class="accent">#</span> experience</h2>
+        <p class="section-desc">Where I've been sharpening the tools.</p>
+
+        <ol class="timeline">
+
+          <li class="timeline-item">
+            <div class="timeline-role">
+              <h3>Cybersecurity Student Trainee</h3>
+              <p class="org">Offenso Hackers Academy · 2025</p>
+            </div>
+            <p class="timeline-desc">
+              Ran targeted <strong>Nmap</strong> scans to map attack surface in lab envs; inspected captures
+              with <strong>Wireshark</strong> to trace protocol behaviour and spot anomalies; completed
+              CTF-style labs reinforcing Linux command-line and service checks.
+            </p>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-role">
+              <h3>Full Stack Web Development Intern</h3>
+              <p class="org">Inventerton Technologies · 2024–2025</p>
+            </div>
+            <p class="timeline-desc">
+              Worked across HTTP request/response flow, sessions and APIs. Built frontend components and
+              supported backend logic for e-commerce workflow features.
+            </p>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION & CERTIFICATIONS ============ -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <h2 class="section-title"><span class="accent">#</span> education &amp; certifications</h2>
+        <p class="section-desc">Credentials and continuous learning.</p>
+
+        <div class="edu-grid">
+
+          <div class="edu-card">
+            <h3>🎓 Bachelor of Computer Applications</h3>
+            <p class="org">Ramaiah Institute of Business Studies · Affiliated to Bengaluru City University</p>
+            <p class="meta">2022 – 2025 · Bengaluru, Karnataka</p>
+          </div>
+
+          <div class="edu-card">
+            <h3>🏫 Higher Secondary — CBSE</h3>
+            <p class="org">Chinmaya Vidyalaya Kannamaly</p>
+            <p class="meta">2021 – 2022 · Kerala</p>
+          </div>
+
+          <div class="edu-card cert">
+            <h3>🔖 CompTIA Security+</h3>
+            <p class="meta">In progress — expected May 2026</p>
+          </div>
+
+          <div class="edu-card cert">
+            <h3>🔖 OCSP — Offenso Certified Security Professional</h3>
+            <p class="meta">Offenso Hackers Academy</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="container contact-box">
+        <h2 class="section-title"><span class="accent">#</span> contact</h2>
+        <p class="section-desc">
+          Open to entry-level security roles and interesting collaborations.<br />
+          The fastest way to reach me is email.
+        </p>
+
+        <div class="contact-grid">
+          <a class="contact-item" href="mailto:bibithsunil@gmail.com">
+            <span class="contact-icon">✉️</span>
+            <span><strong>Email</strong><br />bibithsunil@gmail.com</span>
+          </a>
+          <a class="contact-item" href="tel:+919037355028">
+            <span class="contact-icon">📞</span>
+            <span><strong>Phone</strong><br />+91 90373 55028</span>
+          </a>
+          <a class="contact-item" href="https://linkedin.com/in/bibith-sunil" target="_blank" rel="noopener">
+            <span class="contact-icon">💼</span>
+            <span><strong>LinkedIn</strong><br />linkedin.com/in/bibith-sunil</span>
+          </a>
+          <span class="contact-item">
+            <span class="contact-icon">📍</span>
+            <span><strong>Location</strong><br />Kerala, India · open to relocation</span>
+          </span>
+        </div>
+
+        <div class="terminal-note">
+          <p><span class="prompt">$</span> <span class="cmd">echo "Thanks for reviewing my work!"</span></p>
+          <p class="ok">✔ Response time: usually within 24 hours</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <p><span class="prompt">❯</span> Designed &amp; built by Bibith Sunil — stay curious, hack ethically.</p>
+      <p class="dim">© <span id="year"></span> · No trackers, no cookies, just content.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
